@@ -1,0 +1,17 @@
+server:
+  port: 0
+
+spring:
+  graphql:
+    schema:
+      printer:
+        enabled: true
+    graphiql:
+      enabled: true
+    cors:
+      allowed-origins: "*"
+    rsocket:
+      mapping: graphql
+  rsocket:
+    server:
+      port: 8081
